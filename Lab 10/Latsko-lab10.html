@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>Lab 10</title>
+	</head>
+
+	<body>
+		<h2>Steve Latsko - IT 2600 - Lab 10</h2>
+
+		<form action="Latsko-lab10.php" method="post">
+			<label for="vendorname">Name:</label>
+			<input type="text" id="vendorname" name="vendorname">
+			
+			<label for="date_begin">Beginning Date:</label>
+			<input type="date" id="date_begin" name="date_begin">
+
+			<label for="date_end">End Date:</label>
+			<input type="date" id="date_end" name="date_end">
+
+			<br>
+
+			<input type="radio" id="radio_vendorname" name="sort_by" value="vendors.vendor_name" checked="">
+			<label for="radio_vendorname">Vendor Name</label><br>
+
+			<input type="radio" id="radio_invoicenumber" name="sort_by" value="invoices.invoice_number">
+			<label for="radio_invoicenumber">Invoice Number</label><br>
+
+			<input type="radio" id="radio_invoicetotal" name="sort_by" value="invoices.invoice_total">
+			<label for="radio_invoicetotal">Invoice Total</label><br>
+
+			<input type="radio" id="radio_invoicedate" name="sort_by" value="invoices.invoice_date">
+			<label for="radio_invoicedate">Invoice Date</label><br>
+
+
+			<input type="submit" value="SUBMIT">
+		</form>
+
+	</body>
+</html>
